@@ -12,7 +12,7 @@ function Header() {
             <nav>
                 <ul className='nav-links'>
                     <a href="#about">About</a>
-                    <a href="#skills">Skills</a>
+                    <a href="#experience">Experience</a>
                     <a href="#projects">Projects</a>
                     <a href="#contact">Contact</a>
                     <a href="https://github.com/KevWin717" target="_blank" rel="noopener noreferrer">Github</a>

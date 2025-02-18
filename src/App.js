@@ -11,9 +11,11 @@ import Experience from './components/Experience';
 function App() {
   return (
     <div className="App">
-      <Header />
-      <main>
+      <section className='top-section'>
+        <Header />
         <About />
+      </section>
+      <main>
         <Experience />
       </main>
     </div>

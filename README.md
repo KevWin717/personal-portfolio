@@ -166,3 +166,15 @@ The website is automatically deployed to **GitHub Pages** through **GitHub Actio
 Ensure the homepage field in package.json is set to:
 
 https://kevinnguyen717.github.io/my-portfolio
+
+--- 
+
+## License
+
+---
+
+## Contact
+
+--- 
+
+## Acknowledgments

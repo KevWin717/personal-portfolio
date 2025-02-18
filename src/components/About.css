@@ -1,0 +1,46 @@
+.about-section {
+    padding: 60px 20px;
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.about-section h2 {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #343a40;
+}
+
+.about-section p {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .about-section {
+        padding: 40px 20px;
+    }
+
+    .about-section h2 {
+        font-size: 2em;
+    }
+
+    .about-section p {
+        font-size: 1em;
+    }
+}
+
+

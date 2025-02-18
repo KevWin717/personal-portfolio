@@ -14,7 +14,6 @@ Welcome to the repository of my personal portfolio website—a showcase of my sk
   - [Installation](#installation)
 - [Usage](#usage)
 - [Deployment](#deployment)
-- [License](#license)
 - [Contact](#contact)
 - [Acknowledgments](#acknowledgments)
 
@@ -167,14 +166,20 @@ Ensure the homepage field in package.json is set to:
 
 https://kevinnguyen717.github.io/my-portfolio
 
---- 
-
-## License
-
 ---
 
 ## Contact
 
+Kevin Nguyen
+
+- Email: kevinn0308@gmail.com
+
+- LinkedIn: linkedin.com/in/kevinnguyen717
+
 --- 
 
 ## Acknowledgments
+
+- Create React App: For bootstrapping the project
+- The Odin Project: For teaching me how to build a webpage.
+- Open-Source Community: For continuous support and resources.

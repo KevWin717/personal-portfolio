@@ -1,46 +1,150 @@
 .about-section {
-    padding: 60px 20px;
-    background-color: #f8f9fa;
-    color: #212529;
+    background: #f7f9fb;
+    min-height: 100vh;
+    padding: 40px 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
 }
 
-.profile-pic {
-    width: 150px;
-    height: 150px;
+.about-hero {
+    max-width: 1100px;
+    margin: 0 auto 32px auto;
+    background: linear-gradient(90deg, #4f8cff 0%, #8f4fff 100%);
+    border-radius: 18px;
+    padding: 40px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    box-shadow: 0 4px 24px rgba(80, 80, 180, 0.08);
+}
+
+.about-hero-left {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.about-profile-icon {
+    width: 120px;
+    height: 120px;
+    background: rgba(255,255,255,0.15);
     border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 56px;
+}
+
+.about-profile-img {
+    width: 100px;
+    height: 100px;
     object-fit: cover;
-    margin-bottom: 20px;
+    border-radius: 50%;
+    border: 4px solid rgba(255,255,255,0.4);
+    box-shadow: 0 2px 8px rgba(80,80,180,0.10);
+    background: #fff;
 }
 
-.about-section h2 {
-    max-width: 800px;
+.about-name {
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.about-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+.about-desc {
+    /* max-width: 400px; */
+    font-size: 1.1rem;
+    line-height: 1.5;
+    width: 100%;
+    text-align: justify;
+}
+
+.about-hero-right {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-end;
+}
+
+.about-contact > div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1rem;
+    margin-bottom: 4px;
+}
+
+.about-social {
+    display: flex;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+.about-social-btn {
+    background: rgba(255,255,255,0.18);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 14px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: background 0.2s;
+}
+
+.about-social-btn:hover {
+    background: rgba(255,255,255,0.35);
+}
+
+.about-card {
+    max-width: 1100px;
     margin: 0 auto;
-    text-align: left;
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    color: #343a40;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 16px rgba(80, 80, 180, 0.07);
+    padding: 36px 32px;
 }
 
-.about-section p {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 1.1em;
-    line-height: 1.6;
+.about-card-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #3a5ad7;
+    margin-bottom: 18px;
 }
 
-@media (max-width: 768px) {
-    .about-section {
-        padding: 40px 20px;
-    }
-
-    .about-section h2 {
-        font-size: 2em;
-    }
-
-    .about-section p {
-        font-size: 1em;
-    }
+.about-card-body {
+    font-size: 1.08rem;
+    color: #222;
+    margin-bottom: 28px;
 }
 
+.about-card-body p {
+    margin-bottom: 10px;
+}
 
+.about-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 18px;
+}
+
+.about-stat-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #3a5ad7;
+}
+
+.about-stat-label {
+    font-size: 1rem;
+    color: #444;
+    margin-top: 2px;
+}

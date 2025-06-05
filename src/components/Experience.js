@@ -41,29 +41,67 @@ const experiences = [
 ];
 
 const Experience = () => {
-    return (
-        <section id="experience" className="experience">
-            <h1>Experience</h1>
-            {experiences.map((exp, index) => (
-                <div className="experience-item" key={index}>
-                    <div className="experience-header">
-                        <h2>{exp.date}</h2>
-                        <h3>{exp.title}</h3>
-                        <h4>{exp.location}</h4>
-                    </div>
-                    <p className="experience-description">{exp.description}</p>
-                    {exp.skills && exp.skills.length > 0 && (
-                        <div className="skills-container">
-                            {exp.skills.map((skill,idx) => (
-                                <div className="skill-bubble" key={idx}>
-                                    {skill}
-                                </div>
-                            ))}
-                        </div>
-                    )}
-                </div>
-            ))}
+    const leftExperiences = experiences.slice(0, 2);
+    const rightExperiences = experiences.slice(2, 4);
 
+    return (
+        <section id="experience" className="experience-section">
+            <div className="experience-header">
+                <span role="img" aria-label="briefcase">💼</span>
+                <span>Experience</span>
+            </div>
+            <div className="experience-columns">
+                <div className="experience-column">
+                    {leftExperiences.map((exp, index) => (
+                        <div className="experience-card" key={index}>
+                            <div className="experience-card-header">
+                                <h2 className="experience-date">{exp.date}</h2>
+                                <h3 className="experience-title">{exp.title}</h3>
+                                <h4 className="experience-location">{exp.location}</h4>
+                            </div>
+                            <div className="experience-description">
+                                {exp.description.map((desc, i) => (
+                                    <p key={i}>{desc}</p>
+                                ))}
+                            </div>
+                            {exp.skills && exp.skills.length > 0 && (
+                                <div className="skills-container">
+                                    {exp.skills.map((skill, idx) => (
+                                        <div className="skill-bubble" key={idx}>
+                                            {skill}
+                                        </div>
+                                    ))}
+                                </div>
+                            )}
+                        </div>
+                    ))}
+                </div>
+                <div className="experience-column">
+                    {rightExperiences.map((exp, index) => (
+                        <div className="experience-card" key={index + leftExperiences.length}>
+                            <div className="experience-card-header">
+                                <h2 className="experience-date">{exp.date}</h2>
+                                <h3 className="experience-title">{exp.title}</h3>
+                                <h4 className="experience-location">{exp.location}</h4>
+                            </div>
+                            <div className="experience-description">
+                                {exp.description.map((desc, i) => (
+                                    <p key={i}>{desc}</p>
+                                ))}
+                            </div>
+                            {exp.skills && exp.skills.length > 0 && (
+                                <div className="skills-container">
+                                    {exp.skills.map((skill, idx) => (
+                                        <div className="skill-bubble" key={idx}>
+                                            {skill}
+                                        </div>
+                                    ))}
+                                </div>
+                            )}
+                        </div>
+                    ))}
+                </div>
+            </div>
             <div className="resume-link">
                 <a href="./files/Kevin_Nguyen_Resume.pdf" target="_blank" rel="noopener noreferrer">
                     View Full Resume

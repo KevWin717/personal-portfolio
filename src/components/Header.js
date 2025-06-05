@@ -6,16 +6,24 @@ function Header() {
     return(
         <header className='header'>
             <div className='logo-content'>
-                <img src='/images/logo.jpeg' alt='logo'/>
+                <h1 className="gradient-name">Kevin Nguyen</h1>
             </div>
             <nav>
                 <ul className='nav-links'>
                     <li><a href="#about">About</a></li>
                     <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
+                    {/* <li><a href="#projects">Projects</a></li> */}
                     <li><a href="#contact">Contact</a></li>
-                    <li><a href="https://github.com/KevWin717" target="_blank" rel="noopener noreferrer">Github</a></li>
-                    <li><a href="https://linkedin.com/in/kevinnguyen717" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                    <li>
+                        <a
+                            href="/files/Kevin_Nguyen_Resume.pdf"
+                            className="download-cv-btn"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                             Download CV
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </header>

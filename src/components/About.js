@@ -8,7 +8,7 @@ function About() {
                 <div className="about-hero-left">
                     <div className="about-profile-icon">
                         <img 
-                            src="/images/me.jpg" 
+                            src={`${process.env.PUBLIC_URL}/images/me.jpg`} 
                             alt="Kevin Nguyen" 
                             className="about-profile-img"
                     />

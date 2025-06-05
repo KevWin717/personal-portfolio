@@ -16,7 +16,7 @@ function Header() {
                     <li><a href="#contact">Contact</a></li>
                     <li>
                         <a
-                            href="/files/Kevin_Nguyen_Resume.pdf"
+                            href={'${process.env.PUBLIC_URL}/files/Kevin_Nguyen_Resume.pdf'}
                             className="download-cv-btn"
                             target="_blank"
                             rel="noopener noreferrer"

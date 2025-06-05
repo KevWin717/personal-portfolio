@@ -103,7 +103,7 @@ const Experience = () => {
                 </div>
             </div>
             <div className="resume-link">
-                <a href="./files/Kevin_Nguyen_Resume.pdf" target="_blank" rel="noopener noreferrer">
+                <a href={'${process.env.PUBLIC_URL}/files/Kevin_Nguyen_Resume.pdf'} target="_blank" rel="noopener noreferrer">
                     View Full Resume
                 </a>
             </div>
